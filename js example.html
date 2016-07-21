@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Example</title>
+    <script>
+      function myFunction() {
+        var images = document.getElementById("images");
+		
+		if (images.src.match("cute-puppies2.jpg")) {
+			images.src = "cute-puppies.jpg";
+			images.alt = "img";
+		}
+		else{
+		images.src = "cute-puppies2.jpg";
+		images.alt = "alternate";
+		}
+      }
+	 
+    </script>
+  </head>
+  <body>
+    <button id="btn" onclick="myFunction()">Click me!</button>
+	<img id= "images" src="cute-puppies.jpg" alt= "alternate">
+	
+  </body>
+</html>
+ 
